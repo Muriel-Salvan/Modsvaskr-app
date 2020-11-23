@@ -3,7 +3,7 @@
 **Command-line UI handling a full Mods' ecosystem for Bethesda's games.**
 
 **Please be aware that this tool is still in Beta version**
-That means its UI is still not polished, a lot of features are sill to be implemented, and bugs will roam in some parts.
+That means its UI is still not polished, a lot of features are still to be implemented, and bugs will roam in some parts.
 You can check a list of opened tickets (and contribute by adding more when you find issues or propose new features) in its [Github's repository](https://github.com/Muriel-Salvan/modsvaskr/issues).
 
 ## Description
@@ -58,7 +58,7 @@ Adding a new compatible game should be as easy as adding a file in this director
 
 3 tools and 2 mods are needed for Modsvaskr to work:
 * [Ruby 2.6.6 with DevKit](https://rubyinstaller.org/downloads/) as this is the language Modsvaskr is written in - Don't install a version greater or equal to 2.7 for the time being as some dependencies don't work well on Windows in those versions.
-* [SKSE](https://skse.silverlock.org/) to support a lot of scripting. - You have to install this on your Bethesda game.
+* [SKSE](https://skse.silverlock.org/) to support a lot of scripting. - You have to install this in your Bethesda game.
 * [xEdit](https://www.nexusmods.com/skyrimspecialedition/mods/164) to get information from mods. - You have to install this in a common programs directory (like Program Files), and not in your game folder.
 * [AutoLoad](https://www.nexusmods.com/skyrimspecialedition/mods/41478) to be able to automatically restart the game after a CTD. - Install this like any other mod.
 * [AutoTest](https://www.nexusmods.com/skyrimspecialedition/mods/42520) to be able to automatically run in-game testing. - Install this like any other mod.
@@ -71,7 +71,7 @@ Adding a new compatible game should be as easy as adding a file in this director
 
 Modsvaskr installs in a common programs directory (like xEdit), **not in your game, and not like a mod**.
 
-Just uncompresses the whole archive in a common location. In this README the location `C:/Programs/Modsvaskr` is taken as an example.
+Just uncompress the whole archive in a common location. In this README the location `C:/Programs/Modsvaskr` is taken as an example.
 
 ### Install dependencies
 
