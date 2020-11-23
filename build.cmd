@@ -11,6 +11,6 @@ IF NOT DEFINED sevenZipDir (
 )
 
 del Modsvaskr.7z
-"%sevenZipDir%\7z.exe" a Modsvaskr.7z Gemfile Install.cmd Update.cmd Modsvaskr.cmd CHANGELOG.md LICENSE README.md docs\
+"%sevenZipDir%\7z.exe" a Modsvaskr.7z Gemfile Install.cmd Update.cmd Modsvaskr.cmd CHANGELOG.md LICENSE README.md
 
 md_to_bbcode --input README.md --output README.bbcode
