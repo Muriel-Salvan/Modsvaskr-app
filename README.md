@@ -71,7 +71,7 @@ Adding a new compatible game should be as easy as adding a file in this director
 
 Modsvaskr installs in a common programs directory (like xEdit), **not in your game, and not like a mod**.
 
-Just uncompress the whole archive in a common location. In this README the location `C:/Programs/Modsvaskr` is taken as an example.
+Just uncompress the whole archive in a common location. In this README the location `C:\Programs\Modsvaskr` is taken as an example.
 
 ### Install dependencies
 
@@ -79,7 +79,7 @@ Once uncompressed, execute the file `Install.cmd` to install the tool's dependen
 
 ### Configure paths to your games
 
-A simple Yaml configuration file is present in the program's folder: `C:/Programs/Modsvaskr/modsvaskr.yaml`. Edit it using any text editor (like Notepad) and change its paths according to your own configuration: your games, and xEdit.
+A simple Yaml configuration file is present in the program's folder: `C:\Programs\Modsvaskr\modsvaskr.yaml`. Edit it using any text editor (like Notepad) and change its paths according to your own configuration: your games, xEdit, 7-zip...
 
 Example:
 ```yaml
@@ -88,14 +88,14 @@ Example:
 games:
   - name: Skyrim SE
     # The installation path (containing the launch executable).
-    path: C:/Program Files (x86)/Steam/steamapps/common/Skyrim Special Edition
-    # The executable to be launched to run the game.
-    launch_exe: skse64_loader.exe
+    path: C:\Program Files (x86)\Steam\steamapps\common\Skyrim Special Edition
     # Possible types are defined as the file names in vendor/bundle/ruby/<version>/gems/modsvaskr-<version>/lib/modsvaskr/games/*.rb
     type: skyrim_se
+    # The executable to be launched to run the game.
+    launch_exe: skse64_loader.exe
 
 # Path where xEdit is installed
-xedit: C:/Programs/SSEEdit 4_0_3-164-4-0-3-1575326827
+xedit: C:\Programs\SSEEdit 4_0_3-164-4-0-3-1575326827
 ```
 
 ### Update Modsvaskr
@@ -116,18 +116,18 @@ Here are the steps to have a local version of the modsvaskr Rubygem.
 
 ### Download a local copy of the modsvaskr Rubygem from Github
 
-You can get a local copy of Modsvaskr Rubygem locally (in `C:/MyRubygems/Modsvaskr-rubygem` for this example), either
+You can get a local copy of Modsvaskr Rubygem locally (in `C:\MyRubygems\Modsvaskr-rubygem` for this example), either
 * by downloading and unzipping the package from https://github.com/Muriel-Salvan/modsvaskr (click on the green download button -> Download zip),
 * or by using git (download and install from https://git-scm.com/download/win if needed) and cloning the repository:
   ```bash
-  git clone https://github.com/Muriel-Salvan/modsvaskr.git "C:/MyRubygems/Modsvaskr-rubygem"
+  git clone https://github.com/Muriel-Salvan/modsvaskr.git "C:\MyRubygems\Modsvaskr-rubygem"
   ```
 
 ### Make your Modsvaskr's installation use your local modsvaskr Rubygem
 
-For this you edit the `Gemfile` of your Modsvaskr installation (`C:/Programs/Modsvaskr/Gemfile`) with any text editor and add the path to your Rubygem to the line `gem 'modsvaskr'`:
+For this you edit the `Gemfile` of your Modsvaskr installation (`C:\Programs\Modsvaskr\Gemfile`) with any text editor and add the path to your Rubygem to the line `gem 'modsvaskr'`:
 ```ruby
-gem 'modsvaskr', path: 'C:/MyRubygems/Modsvaskr-rubygem'
+gem 'modsvaskr', path: 'C:\MyRubygems\Modsvaskr-rubygem'
 ```
 
 You can undo this edit to revert back to using the official Modsvaskr's Rubygem anytime.
@@ -138,7 +138,7 @@ Each time you modify your Modsvaskr's `Gemfile`, you need to update your install
 
 ### Enjoy
 
-Now that your Modsvask'r installation is using a local version of the modsvaskr's Rubygem you can change its code from `C:/MyRubygems/Modsvaskr-rubygem` the way you want, modify it, extend it etc...
+Now that your Modsvask'r installation is using a local version of the modsvaskr's Rubygem you can change its code from `C:\MyRubygems\Modsvaskr-rubygem` the way you want, modify it, extend it etc...
 Changes you perform there are automatically taken into account when you launch Modsvaskr (using `Modsvaskr.cmd`, even from Mod Organizer).
 
 ## Developers corner
