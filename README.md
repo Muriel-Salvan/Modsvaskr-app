@@ -134,6 +134,19 @@ If you want to update your Modsvaskr to the latest available version, you just n
 
 In case the upgrade brings you more features to play with in the configuration, you may want to edit your `modsvaskr.yaml` file to configure those features. You can always **check the [official `modsvaskr.yaml` sample file](https://github.com/Muriel-Salvan/modsvaskr/blob/master/modsvaskr.yaml.sample) to know about all possible configuration options**.
 
+## Installation as a ModOrganizer's executable
+
+If you are using ModOrganizer, then you can configure **Modsvaskr to be run from inside ModOrganizer**.
+Follow those steps to do so, in Mod Organizer:
+* Got to the top menu Tools -> Executables
+* Click on the + button -> Add from file...
+* In the "Select an executable" dialog, change the filter "`Executables (*.exe *.bat *.jar)`" to `"All files (*.*)`", then go to your Modsvaskr directory and select the file `Modsvaskr.cmd`. Click `Open`.
+* Back in the Executables dialog, click `OK`.
+
+![Modsvaskr in Mod Organizer](docs/executable_in_mo.png)
+
+You know have Modsvaskr as an executable in the list of your executables, from the drop-down right list.
+
 ## Usage
 
 **Please refer to [modsvaskr's documentation](https://github.com/Muriel-Salvan/modsvaskr/blob/master/README.md#usage) page for a complete reference of its usage.**
