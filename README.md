@@ -73,6 +73,8 @@ Modsvaskr installs in a common programs directory (like xEdit), **not in your ga
 
 Just uncompress the whole archive in a common location. In this README the location `C:\Programs\Modsvaskr` is taken as an example.
 
+Be **careful to only use ASCII characters in the installation path** (no UTF-8 characters), otherwise some installation/update commands may fail.
+
 ### Install dependencies
 
 Once uncompressed, execute the file `Install.cmd` to install the tool's dependencies.
