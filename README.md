@@ -10,12 +10,14 @@ You can check a list of opened tickets (and contribute by adding more when you f
 
 Heavy mods' user often have **hard times when they want to get a stable modded game**.
 A lot of tools are already helping a lot:
+
 * [Mod Organizer](https://www.nexusmods.com/skyrimspecialedition/mods/6194)
 * [LOOT](https://loot.github.io/)
 * [xEdit](http://tes5edit.github.io/)
 * Plenty of tools to create patches, merge, generate content like LODs etc...
 
-Most of the time, gamers have to perform the following tasks every time their mods list changes:
+<br>Most of the time, gamers have to perform the following tasks every time their mods list changes:
+
 * **Read carefully** all the descriptions of each mod they use.
 * **Re-install mods having patches** for newly added mods (using FOMOD installers for the easiest, and search/install patches from NexusMods for others).
 * **Correct all errors and warnings** reported by tools like LOOT (change mods list upon incompatibilities, clean esps from dirty records...).
@@ -25,20 +27,23 @@ Most of the time, gamers have to perform the following tasks every time their mo
 * **Re-generate all generated content**, like LODs, FNIS animations, Patches...
 * And **test, test, test** - usually breaking the immersive experience of discovering added content naturally in game: to test new mods they usually have to visit changed locations, fly around in high-speed, summon NPCs to check for black faces, etc...
 
-Given those tedious tasks, gamers have basically few choices:
+<br>Given those tedious tasks, gamers have basically few choices:
+
 * Rely only on mods lists already tested and curated by other modders (like the excellent [S.T.E.P. guide](https://wiki.step-project.com/Main_Page)), or
 * Keep the mods number relatively small, and remove mods before adding new ones (therefore having to start games from scratch), or
 * Learn skills of an experienced modder to be able to solve the previous points easily (takes a loooot of time, comprehension and curiosity), or
 * Accept to have a game that is not stable, ruining the gaming experience, or
 * Ask Modsvaskr for help ;-)
 
-Modsvaskr is here to help gamers do the following:
+<br>Modsvaskr is here to help gamers do the following:
+
 * **Automate repeatible and tedious tasks** they have to do while updating their mods list (patchs, LODs...).
 * **Automate lot of testing** so that they can detect quickly without manually tests, and without having to discover mods before-hand and ruin their in-game experience (automatically load changed locations, new NPCs...).
 * **Detect issues early**, so that they can focus of solving the most important issues in their mods list.
 * Simplify the way non-modder gamers can **improve and automate their gaming experience**.
 
-The goal as a gamer using Modsvaskr is to be able to:
+<br>The goal as a gamer using Modsvaskr is to be able to:
+
 * **Easily update a mods list** without fear or forgetting some processing, for a large number of mods (over 1000).
 * Know quickly and without human intervention **what could go wrong** in using all those mods.
 * Solve problems that could be **solved automatically**.
@@ -47,6 +52,7 @@ The goal as a gamer using Modsvaskr is to be able to:
 ## Games
 
 The list of games that should be compatible with Modsvaskr are the following:
+
 * Skyrim.
 * Skyrim Special Edition - Tested successfully.
 * Fallout 4.
@@ -57,6 +63,7 @@ Adding a new compatible game should be as easy as adding a file in this director
 ## Requirements
 
 3 tools and 2 mods are needed for Modsvaskr to work:
+
 * [Ruby 2.6.6 with DevKit](https://rubyinstaller.org/downloads/) as this is the language Modsvaskr is written in - Don't install a version greater or equal to 2.7 for the time being as some dependencies don't work well on Windows in those versions.
 * [SKSE](https://skse.silverlock.org/) to support a lot of scripting. - You have to install this in your Bethesda game.
 * [xEdit](https://www.nexusmods.com/skyrimspecialedition/mods/164) to get information from mods. - You have to install this in a common programs directory (like Program Files), and not in your game folder.
@@ -84,6 +91,7 @@ Once uncompressed, execute the file `Install.cmd` to install the tool's dependen
 A simple Yaml configuration file is present in the program's folder: `C:\Programs\Modsvaskr\modsvaskr.yaml`. Edit it using any text editor (like Notepad) and change its paths according to your own configuration: your games, xEdit, 7-zip...
 
 Example:
+
 ```yaml
 ---
 # Specify the list of Bethesda games that should be handled
@@ -138,12 +146,13 @@ In case the upgrade brings you more features to play with in the configuration, 
 
 If you are using ModOrganizer, then you can configure **Modsvaskr to be run from inside ModOrganizer**.
 Follow those steps to do so, in Mod Organizer:
+
 * Got to the top menu Tools -> Executables
 * Click on the + button -> Add from file...
 * In the "Select an executable" dialog, change the filter "`Executables (*.exe *.bat *.jar)`" to `"All files (*.*)`", then go to your Modsvaskr directory and select the file `Modsvaskr.cmd`. Click `Open`.
 * Back in the Executables dialog, click `OK`.
 
-![Modsvaskr in Mod Organizer](docs/executable_in_mo.png)
+![Modsvaskr in Mod Organizer](https://raw.githubusercontent.com/Muriel-Salvan/Modsvaskr-app/master/docs/executable_in_mo.png)
 
 You know have Modsvaskr as an executable in the list of your executables, from the drop-down right list.
 
@@ -162,6 +171,7 @@ Here are the steps to have a local version of the modsvaskr Rubygem.
 ### Download a local copy of the modsvaskr Rubygem from Github
 
 You can get a local copy of Modsvaskr Rubygem locally (in `C:\MyRubygems\Modsvaskr-rubygem` for this example), either
+
 * by downloading and unzipping the package from https://github.com/Muriel-Salvan/modsvaskr (click on the green download button -> Download zip),
 * or by using git (download and install from https://git-scm.com/download/win if needed) and cloning the repository:
   ```bash
@@ -198,7 +208,7 @@ This can be achieved using the `build.cmd` tool, from a command-line session:
   set "sevenZipDir=C:\Programs\7zip"
   ```
   
-2. You'll need [md_to_bbcode](https://github.com/Muriel-Salvan/md_to_bbcode) to generate documentation for NexusMods. Make sure it is installed (meaning that `md_to_bbcode --version` works).
+2. You'll need [`md_to_bbcode`](https://github.com/Muriel-Salvan/md_to_bbcode) to generate documentation for NexusMods. Make sure it is installed (meaning that `md_to_bbcode --version` works).
   
 3. Launch the `build.cmd` command from the root of the repository:
   ```bat
